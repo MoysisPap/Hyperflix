@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        @apply bg-m_black min-h-svh font-open_sans
+    }
+
+    h1 {
+        @apply text-m_white font-amaranth font-bold text-2xl sm:text-4xl
+    }
+
+    h2 {
+        @apply font-amaranth text-m_white font-bold text-xl sm:text-3xl
+    }
+
+    .btn {
+        @apply text-m_white bg-m_gold border-[1px] border-m_gold py-2 px-4 cursor-pointer text-sm
+
+    }
+    .btn:hover {
+        @apply text-m_gold bg-opacity-0 border-[1px] border-m_gold
+    }
+
+    .btn-outline {
+        @apply text-m_gold border-[1px] border-m_gold py-2 px-4 cursor-pointer text-sm
+
+    }
+    .btn-outline:hover {
+        @apply text-m_white bg-m_gold border-[1px] border-m_gold
+    }
+
+    .btn-outline-sm {
+        @apply text-m_gold border-[1px] border-m_gold py-0.5 px-3 cursor-pointer text-xs
+
+    }
+    .btn-outline-sm:hover {
+        @apply text-m_white bg-m_gold border-[1px] border-m_gold
+    }
+}
+
